@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "876871808524",
+    "project_id": "android-project-2fafb",
+    "storage_bucket": "android-project-2fafb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876871808524:android:b6d88659b304eb420a2029",
+        "android_client_info": {
+          "package_name": "com.edu.voquoctinh.quanlychitieu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVEXebkc6fqXqhXRhSBN4AWru29PuSuCc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

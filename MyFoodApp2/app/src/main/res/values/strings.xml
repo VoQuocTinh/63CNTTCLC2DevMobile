@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My-Food-App</string>
+    <string name="my_food_app">My Food App</string>
+    <string name="hello_explore_your_dream_food">hello explore your dream food</string>
+    <string name="register">Register</string>
+    <string name="sign_in">Sign in</string>
+</resources>

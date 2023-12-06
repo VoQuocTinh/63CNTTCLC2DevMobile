@@ -13,6 +13,15 @@
         android:theme="@style/Theme.MyFoodApp"
         tools:targetApi="31">
         <activity
+            android:name=".slideshow.FavouriteFragment"
+            android:exported="false" />
+        <activity
+            android:name=".home.HomeFragment"
+            android:exported="false" />
+        <activity
+            android:name=".gallery.DailyMealFragment"
+            android:exported="false" />
+        <activity
             android:name=".RegistrationActivity"
             android:exported="false" />
         <activity
@@ -20,7 +29,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".WelcomActivity"
             android:exported="true">

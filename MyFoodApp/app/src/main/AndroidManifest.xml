@@ -13,6 +13,11 @@
         android:theme="@style/Theme.MyFoodApp"
         tools:targetApi="31">
         <activity
+            android:name=".NavigationMyFoodApp"
+            android:exported="false"
+            android:label="@string/title_activity_navigation_my_food_app"
+            android:theme="@style/Theme.MyFoodApp.NoActionBar" />
+        <activity
             android:name=".slideshow.FavouriteFragment"
             android:exported="false" />
         <activity

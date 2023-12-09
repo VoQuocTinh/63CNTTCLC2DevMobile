@@ -19,7 +19,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void mainActivity(View view) {
-        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+        startActivity(new Intent(LoginActivity.this, NavigationMyFoodApp.class));
 
     }
 }

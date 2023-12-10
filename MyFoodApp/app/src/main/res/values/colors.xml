@@ -4,4 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="purple_700">#FF5353</color>
     <color name="purple">#6750A4</color>
+    <color name="Gray">#C0C0C0</color>
+    <color name="MediumGray">#262523</color>
+    <color name="Gray1">#393d40	</color>
 </resources>

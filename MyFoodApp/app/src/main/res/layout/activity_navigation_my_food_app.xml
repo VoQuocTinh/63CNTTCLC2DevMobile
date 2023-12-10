@@ -21,5 +21,21 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_navigation_my_food_app"
-        app:menu="@menu/activity_main_drawer" />
+        app:menu="@menu/activity_main_drawer"
+        android:background="@color/Gray"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="15dp"
+            android:layout_marginBottom="-4dp"
+            android:text="Log out"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+        
+    </com.google.android.material.navigation.NavigationView>
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -11,18 +11,16 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.edu.voquoctinh.myfoodapp.R;
-import com.edu.voquoctinh.myfoodapp.models.HomeHorModel;
-import com.edu.voquoctinh.myfoodapp.models.HomeVerModel;
+import com.edu.voquoctinh.myfoodapp.models.DailyMealModels;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHolder> {
+public class DailyMealAdapter extends RecyclerView.Adapter<DailyMealAdapter.ViewHolder> {
 
     Context context;
-    ArrayList<HomeVerModel> list;
+    List<DailyMealModels> list;
 
-    public HomeVerAdapter(Context context, ArrayList<HomeVerModel> list) {
+    public DailyMealAdapter(Context context, List<DailyMealModels> list) {
         this.context = context;
         this.list = list;
     }
@@ -30,7 +28,7 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.home_vertical_item,parent, false));
+        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.daily_meal_item,parent,false));
     }
 
     @Override
@@ -38,6 +36,9 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
 
         holder.imageView.setImageResource(list.get(position).getImage());
         holder.name.setText(list.get(position).getName());
+        holder.discount.setText(list.get(position).getDiscount());
+        holder.description.setText(list.get(position).getDescription());
+
 
     }
 
@@ -49,15 +50,15 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView imageView;
-        TextView name, timing, rating, price;
+        TextView name,description,discount;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.ver_img);
-            name = itemView.findViewById(R.id.name);
-            timing = itemView.findViewById(R.id.timing);
-            rating = itemView.findViewById(R.id.rating);
-            price = itemView.findViewById(R.id.price);
+            imageView = itemView.findViewById(R.id.imageview);
+            name = itemView.findViewById(R.id.textView8);
+            description = itemView.findViewById(R.id.textView9);
+            discount = itemView.findViewById(R.id.discount);
+
         }
     }
 }

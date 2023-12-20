@@ -1,8 +1,10 @@
 package com.edu.voquoctinh.myfoodapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.ImageView;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -24,6 +26,7 @@ public class NavigationMyFoodApp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 
         binding = ActivityNavigationMyFoodAppBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

@@ -1,6 +1,7 @@
 package com.edu.voquoctinh.myfoodapp.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.edu.voquoctinh.myfoodapp.DetailedDailyMealActivity;
 import com.edu.voquoctinh.myfoodapp.R;
 import com.edu.voquoctinh.myfoodapp.models.DailyMealModels;
 
@@ -39,6 +41,14 @@ public class DailyMealAdapter extends RecyclerView.Adapter<DailyMealAdapter.View
         holder.discount.setText(list.get(position).getDiscount());
         holder.description.setText(list.get(position).getDescription());
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, DetailedDailyMealActivity.class);
+                intent.putExtra("type",list.get(position).getType());
+                context.startActivity(intent);
+            }
+        });
 
     }
 

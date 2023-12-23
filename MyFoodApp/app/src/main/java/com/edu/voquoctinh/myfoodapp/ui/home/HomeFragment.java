@@ -37,13 +37,13 @@ public class HomeFragment extends Fragment implements UpdateVerticalRec {
     ArrayList<HomeVerModel> homeVerModelList;
     HomeVerAdapter homeVerAdapter;
 
-
+    ImageView account1;
     private View view;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_home, container, false);
-
+        getui(root);
 
 
         homeHorizontalRec = root.findViewById(R.id.home_hor_rec);
@@ -72,9 +72,23 @@ public class HomeFragment extends Fragment implements UpdateVerticalRec {
         homeVerticalRec.setAdapter(homeVerAdapter);
         homeVerticalRec.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.VERTICAL, false));
 
+        actionlistener();
+
         return root;
 
 
+    }
+    void getui(View view){
+        account1 = view.findViewById(R.id.account1);
+    }
+    void actionlistener(){
+        account1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), LoginActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

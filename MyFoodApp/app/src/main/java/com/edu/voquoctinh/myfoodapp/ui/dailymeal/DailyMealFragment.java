@@ -35,11 +35,11 @@ public class DailyMealFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         dailyMealModels = new ArrayList<>();
 
-        dailyMealModels.add(new DailyMealModels(R.drawable.breakfast,"Breakfast", "30% OFF","Description Description"));
-        dailyMealModels.add(new DailyMealModels(R.drawable.lunch,"Lunch", "20% OFF","Description Description"));
-        dailyMealModels.add(new DailyMealModels(R.drawable.dinner,"Dinner", "10% OFF","Description Description"));
-        dailyMealModels.add(new DailyMealModels(R.drawable.sweets,"Sweets", "50% OFF","Description Description"));
-        dailyMealModels.add(new DailyMealModels(R.drawable.coffe,"Coffee", "40% OFF","Description Description"));
+        dailyMealModels.add(new DailyMealModels(R.drawable.breakfast,"Breakfast", "30% OFF","Description Description","breakfast"));
+        dailyMealModels.add(new DailyMealModels(R.drawable.lunch,"Lunch", "20% OFF","Description Description","Lunch"));
+        dailyMealModels.add(new DailyMealModels(R.drawable.dinner,"Dinner", "10% OFF","Description Description","Dinner"));
+        dailyMealModels.add(new DailyMealModels(R.drawable.sweets,"Sweets", "50% OFF","Description Description","Sweets"));
+        dailyMealModels.add(new DailyMealModels(R.drawable.coffe,"Coffee", "40% OFF","Description Description","Coffee"));
 
         dailyMealAdapter = new DailyMealAdapter(getContext(),dailyMealModels);
         recyclerView.setAdapter(dailyMealAdapter);

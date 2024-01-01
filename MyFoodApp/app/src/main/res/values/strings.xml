@@ -38,4 +38,6 @@
     <string name="yummyhihi">Yummyhihi</string>
     <string name="search_your_food">Search your food</string>
     <string name="discount">Discount</string>
+    <string name="make_order">Make Order</string>
+    <string name="my_cart1">My Cart</string>
 </resources>

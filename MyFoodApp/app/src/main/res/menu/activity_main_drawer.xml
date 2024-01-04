@@ -13,12 +13,12 @@
             android:icon="@drawable/baseline_all_inclusive_24"
             android:title="@string/daily_meal" />
         <item
-            android:id="@+id/nav_favourite"
-            android:icon="@drawable/baseline_favorite_24"
-            android:title="@string/favourite" />
-        <item
             android:id="@+id/nav_my_cart"
             android:icon="@drawable/baseline_shopping_cart_24"
             android:title="@string/my_cart" />
+        <item
+            android:id="@+id/nav_proflie"
+            android:icon="@drawable/baseline_person_24"
+            android:title="@string/profile" />
     </group>
 </menu>

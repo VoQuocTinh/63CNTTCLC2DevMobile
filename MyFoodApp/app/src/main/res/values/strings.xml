@@ -40,4 +40,7 @@
     <string name="discount">Discount</string>
     <string name="make_order">Make Order</string>
     <string name="my_cart1">My Cart</string>
+    <string name="capuchino">Capuchino</string>
+    <string name="description">Description</string>
+    <string name="profile">Profile</string>
 </resources>

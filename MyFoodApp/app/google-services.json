@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "994206434505",
+    "project_id": "myfoodappproject-5b5f0",
+    "storage_bucket": "myfoodappproject-5b5f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994206434505:android:fbea9feac4dc83026bb918",
+        "android_client_info": {
+          "package_name": "com.edu.voquoctinh.myfoodapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6BV8kFNAS3KkF5lrVhA8Pp0lids-ffmg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

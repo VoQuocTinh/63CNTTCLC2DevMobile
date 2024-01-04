@@ -70,9 +70,7 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
 
                 ImageView bottomImage = sheetView.findViewById(R.id.bottom_image);
                 TextView bottomName = sheetView.findViewById(R.id.bottom_name);
-                TextView bottomPrice = sheetView.findViewById(R.id.bottom_price);
-                TextView bottomRating = sheetView.findViewById(R.id.bottom_rating);
-                TextView bottomTiming = sheetView.findViewById(R.id.bottom_timing);
+
 
                 bottomName.setText(mName);
                 bottomImage.setImageResource(mImage);
